@@ -1,0 +1,9 @@
+P12 · Risque sismique et réponse d'urgence
+==========================================
+Kit de données internes fourni par l'enseignant.
+Ces fichiers simulent des exports réels transmis par différents services : ils sont volontairement
+hétérogènes. Ne les modifiez pas à la main : toute correction doit être faite dans votre pipeline ETL.
+
+Fichiers :
+- rapport_terrain_*.csv : 10 rapports de terrain (un par commune), données simulées post-séisme
+- centres_hebergement.xlsx : centres d'hébergement d'urgence

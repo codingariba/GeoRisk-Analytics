@@ -1,0 +1,24 @@
+douar,menages,maisons_detruites,maisons_endommagees,etat_route,acces,besoin_prioritaire,date_visite
+Douar Ait 0,173,160,10,Coupee,oui,Soins,2023-09-13
+Douar Imi 1,73,7,58,coupée,non,Soins,2023-09-09
+Douar Tafraout 2,73,27,1,coupée,partiel,Eau,2023-09-29
+Douar Tafraout 3,41,4,23,praticable,oui,Nourriture,12/09/2023
+Douar Imi 4,22,4,4,praticable,partiel,Nourriture,15/09/2023
+Douar Tizi 5,137,65,68,praticable,partiel,Tentes,29/09/2023
+Douar Ait 6,33,4,3,?,non,Tentes,2023-09-27
+Douar Tafraout 7,31,21,0,coupée,partiel,tentes / couvertures,12/09/2023
+Douar Imi 8,158,84,59,4x4 seulement,partiel,Soins,2023-09-17
+Douar Imi 9,155,77,42,4x4 seulement,non,tentes / couvertures,12/09/2023
+Douar Tizi 10,45,36,4,?,oui,Nourriture,2023-09-23
+Douar Tizi 11,31,1,12,praticable,oui,Nourriture,18/09/2023
+Douar Imi 12,58,28,12,?,oui,Eau,15/09/2023
+Douar Tizi 13,54,10,31,Coupee,oui,Eau,2023-09-14
+Douar Imi 14,110,1,13,Coupee,partiel,Nourriture,16/09/2023
+Douar Imi 15,175,119,36,Coupee,non,Nourriture,26/09/2023
+Douar Tizi 16,110,60,18,?,partiel,tentes / couvertures,28/09/2023
+Douar Tizi 17,133,71,14,Coupee,oui,Soins,2023-09-16
+Douar Aguersafen 18,171,95,25,coupée,non,tentes / couvertures,28/09/2023
+Douar Tafraout 19,41,5,0,coupée,partiel,Tentes,2023-09-12
+Douar Tizi 20,99,95,4,?,oui,Tentes,17/09/2023
+Douar Tafraout 21,28,6,10,4x4 seulement,partiel,Soins,2023-09-20
+Douar Tafraout 22,37,11,11,?,oui,tentes / couvertures,13/09/2023

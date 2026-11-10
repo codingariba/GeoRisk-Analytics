@@ -1,0 +1,204 @@
+% Gabarit du livrable J1 -- Note de cadrage
+% Remplacez chaque [À compléter] ; supprimez les lignes d'aide en gris avant le dépôt.
+% Compiler avec XeLaTeX ou LuaLaTeX (Overleaf : Menu > Compilateur > XeLaTeX)
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{french}
+\usepackage[a4paper,margin=2cm,headheight=34pt,includehead]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tabularx,booktabs,array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{bleu}{HTML}{0B5C8C}
+\definecolor{encre}{HTML}{172131}
+\definecolor{gris}{HTML}{5E6B7E}
+\hypersetup{colorlinks=true,linkcolor=bleu,urlcolor=bleu}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.35}
+\titleformat{\section}{\large\bfseries\sffamily\color{bleu}}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries\sffamily\color{encre}}{\thesubsection}{0.5em}{}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+% ---- À renseigner une fois ----
+\newcommand{\projet}{P[XX]}
+\newcommand{\titreprojet}{[Titre du projet]}
+\newcommand{\filiere}{[Big Data Analytics / Full-Stack]}
+\newcommand{\groupe}{[Nom du groupe]}
+\newcommand{\depot}{[https://github.com/...]}
+% Ligne d'aide, à supprimer avant le dépôt :
+\newcommand{\aide}[1]{{\small\color{gris}\itshape #1}\par}
+\newcommand{\todo}{{\color{red!70!black}[À compléter]}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=24pt]{logo_uemf.png}\hspace{8pt}\includegraphics[height=24pt]{logo_eidia.png}}
+\fancyhead[R]{\small\sffamily\color{gris}J1 · Note de cadrage\\\projet{} · \groupe}
+\fancyfoot[R]{\small\sffamily\color{gris}\thepage}
+
+\begin{document}
+
+% ================= Page de garde =================
+\begin{titlepage}
+\centering
+\includegraphics[height=60pt]{logo_uemf.png}\hspace{16pt}\includegraphics[height=60pt]{logo_eidia.png}\par
+\vspace{2.5cm}
+{\sffamily\large\color{gris}Module Gestion des bases de données · Projet de semestre 2026-2027\par}
+\vspace{0.6cm}
+{\sffamily\Huge\bfseries\color{bleu}Livrable J1 · Note de cadrage\par}
+\vspace{0.4cm}
+{\sffamily\LARGE\bfseries\color{encre}\projet{} · \titreprojet\par}
+\vspace{0.4cm}
+{\sffamily\large Filière \filiere\par}
+\vspace{1.8cm}
+\begin{tabularx}{0.6\linewidth}{Y}
+\toprule
+\textbf{Membres du groupe} \\
+\midrule
+\todo \\
+\todo \\
+\todo \\
+\todo \\
+\bottomrule
+\end{tabularx}
+\vfill
+Dépôt Git : \url{\depot}\par
+Date de dépôt : \todo
+\end{titlepage}
+
+% ================= 1 =================
+\section{Présentation du sujet}
+\aide{½ page. Qui est le commanditaire, qui utilisera le système, quelle décision il aidera à prendre, pourquoi c'est important dans la vie réelle.}
+\todo
+
+% ================= 2 =================
+\section{Problématique et objectifs}
+\subsection{Problématique}
+\aide{Une seule phrase interrogative, reformulée par le groupe.}
+\todo
+\subsection{Périmètre}
+\begin{tabularx}{\linewidth}{L{3.5cm} Y Y}
+\toprule
+& \textbf{Inclus} & \textbf{Exclu} \\
+\midrule
+Période & \todo & \todo \\
+Zone & \todo & \todo \\
+Population / objets & \todo & \todo \\
+\bottomrule
+\end{tabularx}
+\subsection{Objectifs}
+Objectif général : \todo
+
+\begin{tabularx}{\linewidth}{L{0.6cm} Y L{6.5cm}}
+\toprule
+\textbf{N°} & \textbf{Objectif spécifique (verbe d'action)} & \textbf{Indicateur de réussite} \\
+\midrule
+O1 & \todo & \todo \\
+O2 & \todo & \todo \\
+O3 & \todo & \todo \\
+\bottomrule
+\end{tabularx}
+
+% ================= 3 =================
+\section{Questions métier}
+\aide{Les 5 questions du cahier des charges + au moins une question ajoutée par le groupe (Q6).}
+{\small
+\begin{tabularx}{\linewidth}{L{0.6cm} Y L{4.2cm} L{4.2cm}}
+\toprule
+\textbf{N°} & \textbf{Question} & \textbf{Indicateur / calcul} & \textbf{Données nécessaires} \\
+\midrule
+Q1 & \todo & & \\
+Q2 & & & \\
+Q3 & & & \\
+Q4 & & & \\
+Q5 & & & \\
+Q6 & & & \\
+\bottomrule
+\end{tabularx}}
+
+% ================= 4 =================
+\section{Les données}
+\subsection{Inventaire des sources}
+\aide{Au moins 4 sources de 3 types différents, dont une API et le kit de l'enseignant.}
+{\small
+\begin{tabularx}{\linewidth}{L{2.4cm} L{1.6cm} L{1.5cm} Y L{1.7cm} L{1.5cm} L{1.5cm} L{1.6cm}}
+\toprule
+\textbf{Source} & \textbf{Type} & \textbf{Format} & \textbf{Accès (lien, clé)} & \textbf{Licence} & \textbf{Période} & \textbf{Volume} & \textbf{Mise à jour} \\
+\midrule
+\todo & & & & & & & \\
+ & & & & & & & \\
+ & & & & & & & \\
+ & & & & & & & \\
+\bottomrule
+\end{tabularx}}
+
+\subsection{Description de chaque source}
+\aide{Une fiche par source. Copiez le bloc ci-dessous autant de fois que nécessaire.}
+
+\textbf{Source : \todo}\\
+Rôle (questions concernées) : \todo\\
+Structure observée (fichiers, onglets, routes, lignes, colonnes) : \todo\\
+Clé de liaison avec les autres sources : \todo
+
+{\small
+\begin{tabularx}{\linewidth}{L{2.6cm} L{2cm} L{1.6cm} L{2.6cm} Y}
+\toprule
+\textbf{Champ} & \textbf{Type observé} & \textbf{Unité} & \textbf{Exemple} & \textbf{Signification} \\
+\midrule
+\todo & & & & \\
+ & & & & \\
+\bottomrule
+\end{tabularx}}
+
+\subsection{Choix et justification}
+\aide{Pourquoi ces sources ; sources envisagées puis écartées et raison ; schéma de liaison entre les sources (figure).}
+\todo
+
+\subsection{Premier diagnostic de qualité}
+\aide{Au moins 5 anomalies réellement observées sur vos échantillons.}
+{\small
+\begin{tabularx}{\linewidth}{L{2.6cm} L{4cm} L{3cm} Y}
+\toprule
+\textbf{Source} & \textbf{Anomalie observée} & \textbf{Exemple} & \textbf{Traitement envisagé} \\
+\midrule
+\todo & & & \\
+ & & & \\
+ & & & \\
+ & & & \\
+ & & & \\
+\bottomrule
+\end{tabularx}}
+
+\subsection{Données sensibles et contraintes}
+\aide{Données personnelles ou de santé, loi 09-08 (CNDP), RGPD le cas échéant, licences, limites d'appels des API, gestion des clés.}
+\todo
+
+% ================= 5 =================
+\section{Méthodologie}
+\subsection{Pipeline envisagé}
+\aide{Schéma de votre pipeline (sources, raw, stg, ods, dw, restitution, sécurité) avec l'outil de chaque étape.}
+\todo
+\subsection{Outils et conventions}
+\todo
+% ================= 6 =================
+\section{Références}
+\aide{Organisme, titre, lien, date de consultation, licence.}
+\begin{enumerate}
+\item \todo
+\end{enumerate}
+
+\appendix
+\section{Annexes}
+\aide{Extrait de chaque fichier, réponse d'API brute (tronquée), captures.}
+\todo
+
+\end{document}
